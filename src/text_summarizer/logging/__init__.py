@@ -14,9 +14,9 @@ logging.basicConfig(
     format= logging_str,
 
     handlers=[
-        logging.FileHandler(log_filepath),
-        logging.StreamHandler(sys.stdout)
+        logging.FileHandler(log_filepath),# log to a file
+        logging.StreamHandler(sys.stdout)# log to console
     ]
 )
 
-logger = logging.getLogger("textSummarizerLogger")
+logger = logging.getLogger("textSummarizerLogger") # create a logger object
